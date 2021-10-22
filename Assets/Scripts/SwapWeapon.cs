@@ -1,0 +1,50 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SwapWeapon : MonoBehaviour
+{
+    int selectWeapon = 1;
+    public GameObject AK47;
+    public GameObject Shotgun;
+    
+    void SwitchWeapon(int tipeSenjata)
+    {
+        if (tipeSenjata == 1)
+        {
+            AK47.SetActive(true);
+            Shotgun.SetActive(false);
+            selectWeapon = 1;
+        }
+        if (tipeSenjata == 2)
+        {
+            AK47.SetActive(false);
+            Shotgun.SetActive(true);
+            selectWeapon = 2;
+        }
+    }
+
+    void Start()
+    {
+        SwitchWeapon(1);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (selectWeapon != 1)
+            {
+                SwitchWeapon(1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (selectWeapon != 2)
+            {
+                SwitchWeapon(2);
+            }
+        }
+
+    }
+}

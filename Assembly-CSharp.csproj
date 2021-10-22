@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{278B8B60-8EFE-63A8-ABC6-57A9DF000A56}</ProjectGuid>
+    <ProjectGuid>{C67940FA-E323-2562-99D4-9AC947729008}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,7 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\AmmoBox.cs" />
+    <Compile Include="Assets\Scripts\ChangeCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimations.cs" />
+    <Compile Include="Assets\Scripts\SwapWeapon.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -624,7 +629,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{771C3F7A-1063-F519-AAFD-E5867568BBE0}</Project>
+      <Project>{7DE5B81E-E379-E9A2-02A7-13ECED3EC2AF}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
